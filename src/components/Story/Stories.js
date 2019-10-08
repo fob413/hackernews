@@ -2,6 +2,7 @@ import React from 'react';
 import './Stories.css';
 
 import Story from './Story';
+import StoryHeader from "./StoriesHeader";
 
 const COLUMNS = {
     title: {
@@ -27,6 +28,8 @@ const COLUMNS = {
 
 const Stories = ({ stories  }) =>
     <div className="stories">
+        <StoryHeader columns={COLUMNS} />
+
         {(stories || []).map(story =>
             <Story
                 key={story.objectID}
