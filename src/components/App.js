@@ -7,7 +7,7 @@ const App = ({ stories, onArchive }) =>
     <div className="app">
         <Stories
             stories={stories}
-            onArchive={{onArchive}}
+            onArchive={onArchive}
         />
     </div>;
 
